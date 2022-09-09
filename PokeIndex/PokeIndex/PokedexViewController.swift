@@ -31,6 +31,7 @@ class PokedexViewController: UIViewController {
         
     }
     
+    //MARK: Functions
     
     //we took entry from user and hold at our delegate
     //we used the condition "if textField is not empty"

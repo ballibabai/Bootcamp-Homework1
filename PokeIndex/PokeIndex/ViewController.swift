@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         tableView.delegate = self
     }
 
+    //MARK: - Functions
+    
     //This function allows viewController to communicate with PokedexViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toPokedex" {

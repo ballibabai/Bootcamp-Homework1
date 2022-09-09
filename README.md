@@ -1,10 +1,11 @@
 # FMSS-Homework-1
 Homework-1
 
-İki tane sayfa olucak
+Data pass from second page to first page with delegation
 
-İlk sayfadan ikinci sayfaya gidilicek
+I used;
+-TableView
+-TableViewCell
+-Protocol
+-Struct
 
-İkinci sayfada textfieldlar olucak buraya girilen verileri ilk sayfada gösterilecek
-
-İster delegeta ister notification ister clouser

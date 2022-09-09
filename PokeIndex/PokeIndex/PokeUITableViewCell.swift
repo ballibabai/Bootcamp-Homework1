@@ -9,10 +9,14 @@ import UIKit
 
 class PokeUITableViewCell: UITableViewCell {
     
+    //MARK: - UI Elements
+    
     @IBOutlet weak var pokeNameLabel: UILabel!
     @IBOutlet weak var pokeTypeLabel: UILabel!
     @IBOutlet weak var pokeSkillALabel: UILabel!
     @IBOutlet weak var pokeSkillBLabel: UILabel!
+    
+    //MARK: - Function
     
     func pokeUI(_ poke: Pokemon){
         pokeNameLabel.text = poke.pokeName
