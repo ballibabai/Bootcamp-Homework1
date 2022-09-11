@@ -14,8 +14,10 @@ class ViewController: UIViewController {
     
     //MARK: - Properties
     
-    var pokemon = [Pokemon]()
+    private var pokemon = [Pokemon]()
     
+    
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,7 +49,7 @@ extension ViewController: UITableViewDataSource{
         return pokemon.count
     }
     
-    //We created PokeUItableViewCell so in here we defined new cell thus we were able to use the function in PokeUItableViewCell
+    //We created PokeUItableViewCell so we cast in here and we defined new cell thus we were able to use in PokeUItableViewCell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "pokeCell") as? PokeUITableViewCell {
             let pokemon = pokemon[indexPath.row]
@@ -84,3 +86,12 @@ extension ViewController: addNewPokemonDelegate{
     
 }
 
+//This function allows us to send the data we hold in struct to label
+private extension PokeUITableViewCell {
+    func pokeUI(_ poke: Pokemon){
+        pokeNameLabel.text = poke.pokeName
+        pokeTypeLabel.text = poke.pokeType
+        pokeSkillALabel.text = poke.pokeSkillA
+        pokeSkillBLabel.text = poke.pokeSkillB
+    }
+}

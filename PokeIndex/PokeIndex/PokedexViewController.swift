@@ -24,7 +24,7 @@ class PokedexViewController: UIViewController {
     var delegate: addNewPokemonDelegate?
     var newPokemon = Pokemon(pokeName: "", pokeType: "", pokeSkillA: "", pokeSkillB: "")
     
-    
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,7 +35,7 @@ class PokedexViewController: UIViewController {
     
     //we took entry from user and hold at our delegate
     //we used the condition "if textField is not empty"
-    @IBAction func addSaveTapped(_ sender: UIBarButtonItem){
+    @IBAction func pokemonSaveTapped(_ sender: UIBarButtonItem){
         
         if let pokemonName = pokemonNameText.text, pokemonNameText.hasText,
            let pokemonType = pokemonTypeText.text, pokemonTypeText.hasText,

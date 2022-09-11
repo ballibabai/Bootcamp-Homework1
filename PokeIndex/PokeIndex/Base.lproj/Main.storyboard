@@ -205,7 +205,7 @@
                     <navigationItem key="navigationItem" title="Pokedex" id="mnx-io-cKy">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="8sh-4E-Iha">
                             <connections>
-                                <action selector="addSaveTapped:" destination="PoE-XD-Pdg" id="xKT-n0-lUv"/>
+                                <action selector="pokemonSaveTapped:" destination="PoE-XD-Pdg" id="hM1-Kq-ZIf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -16,14 +16,4 @@ class PokeUITableViewCell: UITableViewCell {
     @IBOutlet weak var pokeSkillALabel: UILabel!
     @IBOutlet weak var pokeSkillBLabel: UILabel!
     
-    //MARK: - Function
-    
-    func pokeUI(_ poke: Pokemon){
-        pokeNameLabel.text = poke.pokeName
-        pokeTypeLabel.text = poke.pokeType
-        pokeSkillALabel.text = poke.pokeSkillA
-        pokeSkillBLabel.text = poke.pokeSkillB
-    }
-    
-    
 }
