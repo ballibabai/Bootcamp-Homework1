@@ -47,6 +47,11 @@ class PokedexViewController: UIViewController {
             newPokemon.pokeSkillB = pokemonSkillB
             
             delegate?.addNewPokemon(self, with: newPokemon)
+        }else{
+            let alertController = UIAlertController(title: "Error", message: "Could be empty some fields", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Got it!", style: .cancel)
+            alertController.addAction(alertAction)
+            present(alertController, animated: true)
         }
         
     }
