@@ -8,7 +8,7 @@
 import UIKit
 
 protocol addNewPokemonDelegate {
-    func addNewPokemon(_ controller: PokedexViewController, with poke: Pokemon)
+    func addNewPokemon(with poke: Pokemon)
 }
 
 class PokedexViewController: UIViewController {
@@ -46,7 +46,7 @@ class PokedexViewController: UIViewController {
             newPokemon.pokeSkillA = pokemonSkillA
             newPokemon.pokeSkillB = pokemonSkillB
             
-            delegate?.addNewPokemon(self, with: newPokemon)
+            delegate?.addNewPokemon(with: newPokemon)
         }else{
             let alertController = UIAlertController(title: "Error", message: "Could be empty some fields", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "Got it!", style: .cancel)

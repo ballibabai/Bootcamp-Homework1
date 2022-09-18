@@ -75,7 +75,7 @@ extension ViewController: UITableViewDelegate{
 //PopViewController allows us to go to the previous page after our process is finished.
 extension ViewController: addNewPokemonDelegate{
     
-    func addNewPokemon(_ controller: PokedexViewController, with poke: Pokemon) {
+    func addNewPokemon(with poke: Pokemon) {
         let newCell = pokemon.count
         pokemon.append(poke)
         let indexPath = IndexPath(row: newCell, section: 0)
